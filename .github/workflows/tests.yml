@@ -20,3 +20,9 @@ jobs:
 
       - name: Run the test suite
         run: bash run_tests.sh
+      - name: Upload the test report     
+        if: always()
+        uses: actions/upload-artifact@v
+        with:                                
+          name: test-report
+          path: reports/
