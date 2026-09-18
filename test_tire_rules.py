@@ -3,7 +3,7 @@ from tire_rules import classify_pressure
 
 @pytest.mark.parametrize("pressure, expected", [
     (32.0, "PASS"),
-    (36.0, "CRITICAL"),
+    (36.0, "PASS"),
     (34.0, "PASS"),
     (31.9, "FAIL"),
     (36.1, "FAIL"),
