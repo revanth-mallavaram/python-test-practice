@@ -22,7 +22,7 @@ jobs:
         run: bash run_tests.sh
       - name: Upload the test report     
         if: always()
-        uses: actions/upload-artifact@v
+        uses: actions/upload-artifact@4v
         with:                                
           name: test-report
           path: reports/
